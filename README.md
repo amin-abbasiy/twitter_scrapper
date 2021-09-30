@@ -24,6 +24,7 @@ first get to the database.yml and put there your db config
 
     $ bin/console 
     > Database.connect_and_create_db
+    > Tweet.create_table
 
 you can use tweet class methods in console 
 
