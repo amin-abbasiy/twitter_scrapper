@@ -1,8 +1,6 @@
 # TwitterScrapper
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/twitter_scrapper`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to `twitter_scrapper` lib. for getting data from twitter API.
 
 ## Installation
 
@@ -20,9 +18,19 @@ Or install it yourself as:
 
     $ gem install twitter_scrapper
 
-## Usage
+## Setup
 
-TODO: Write usage instructions here
+first get to the database.yml and put there your db config
+
+    $ bin/console 
+    > Database.connect_and_create_db
+
+## Usage
+easiest way to use is run (set up database before):
+
+    $ ruby lib/twitter_scrapper.rb search || stream
+
+    $ ./console to quick start for using this lib
 
 ## Development
 
@@ -32,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/twitter_scrapper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/twitter_scrapper/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/amin-abbasiy/twitter_scrapper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/amin-abbasiy/twitter_scrapper/twitter_scrapper/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -40,4 +48,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the TwitterScrapper project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/twitter_scrapper/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the TwitterScrapper project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/amin-abbasiy/twitter_scrapper/blob/master/CODE_OF_CONDUCT.md).
