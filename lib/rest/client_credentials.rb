@@ -1,4 +1,3 @@
-require 'byebug'
 require 'typhoeus'
 require_relative '../../initialize/app'
 class ClientCredential

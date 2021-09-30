@@ -2,8 +2,9 @@ require_relative '../initialize/twitter.rb'
 require_relative "twitter_scrapper/version"
 require_relative 'model/tweet'
 require_relative 'helpers'
+require 'byebug'
 module TwitterScrapper
-  class Error < StandardError; end
+  class UnknownInput < StandardError; end
   class Scrape
     attr_accessor :real_object
     def initialize(real_object)
@@ -38,7 +39,6 @@ module TwitterScrapper
         helper.log_data(tweet)
         ::Tweet.create(helper.organizer(tweet).merge(flow_id: new_flow_id, created_at: Time.now))
       end
-
     end
   end
   class Stream
@@ -53,6 +53,7 @@ module TwitterScrapper
       new_flow_id = ::Tweet.new_flow
       @client.filter(track: subjects.join(",")) do |object|
         if object.is_a?(Twitter::Tweet)
+          helper.time_limitation_holder
           puts object.text
           puts object.id
           puts object.created_at
@@ -62,7 +63,7 @@ module TwitterScrapper
       end
     end
   end
-
 end
-# TwitterScrapper::Scrape.new(TwitterScrapper::Stream.new(CLIENT)).execute
-# TwitterScrapper::Scrape.new(TwitterScrapper::Search.new(REST_CLIENT)).execute
+raise TwitterScrapper::UnknownInput, "please enter search or stream" unless ARGV[0] == 'search' || 'stream'
+TwitterScrapper::Scrape.new(TwitterScrapper::Search.new(REST_CLIENT)).execute if ARGV[0] == "search"
+TwitterScrapper::Scrape.new(TwitterScrapper::Stream.new(CLIENT)).execute if ARGV[0] == "stream"

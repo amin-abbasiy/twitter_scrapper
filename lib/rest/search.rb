@@ -1,6 +1,5 @@
 require 'json'
 require 'typhoeus'
-require 'byebug'
 require_relative '../../initialize/app'
 
 class Search

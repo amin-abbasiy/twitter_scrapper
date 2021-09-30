@@ -1,7 +1,6 @@
 require 'sequel'
 require 'logger'
 require 'pg'
-require 'byebug'
 require_relative '../db/db.rb'
 class InputError < StandardError; end
 class Tweet
