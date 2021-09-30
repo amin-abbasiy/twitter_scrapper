@@ -7751,3 +7751,365 @@ I, [2021-09-30T15:59:38.825506 #564791]  INFO -- : (0.000417s) SET DateStyle = '
 I, [2021-09-30T15:59:38.830298 #564791]  INFO -- : (0.004074s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
 I, [2021-09-30T15:59:38.831440 #564791]  INFO -- : (0.000672s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
 I, [2021-09-30T15:59:38.843840 #564791]  INFO -- : (0.011512s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443553571060994055, '@Abiotic11 El doctor msh 3agbha en fy wahda 3ndha el energy tl3b basketball w hya 7aml w nfs el age bta3 the second… https://t.co/T41YgQtHR4', 1443504243441377283, 1237129740236005377, 'en', 0, 0, 'Thu Sep 30 12:29:25 +0000 2021', true, false, false, 26, '2021-09-30 15:59:38.808351+0330') RETURNING "id"
+I, [2021-09-30T16:39:08.913873 #580299]  INFO -- : (0.000139s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:39:08.914048 #580299]  INFO -- : (0.000117s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:39:08.914249 #580299]  INFO -- : (0.000172s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:39:08.914639 #580299]  INFO -- : (0.000289s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:39:08.915336 #580299]  INFO -- : (0.000596s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:39:08.919315 #580299]  INFO -- : (0.000134s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:39:08.919524 #580299]  INFO -- : (0.000178s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:39:08.919749 #580299]  INFO -- : (0.000175s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:39:08.920101 #580299]  INFO -- : (0.000237s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:39:08.920741 #580299]  INFO -- : (0.000545s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:39:08.924541 #580299]  INFO -- : (0.000144s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:39:08.924702 #580299]  INFO -- : (0.000130s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:39:08.924865 #580299]  INFO -- : (0.000136s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:39:08.925203 #580299]  INFO -- : (0.000233s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:39:08.925908 #580299]  INFO -- : (0.000608s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:39:08.929611 #580299]  INFO -- : (0.000199s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:39:08.929781 #580299]  INFO -- : (0.000135s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:39:08.929969 #580299]  INFO -- : (0.000154s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:39:08.933983 #580299]  INFO -- : (0.000166s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:39:08.934099 #580299]  INFO -- : (0.000083s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:39:08.934226 #580299]  INFO -- : (0.000102s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:39:08.934518 #580299]  INFO -- : (0.000213s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:39:08.935135 #580299]  INFO -- : (0.000532s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:39:08.935557 #580299]  INFO -- : (0.000197s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:39:08.936115 #580299]  INFO -- : (0.000488s) SELECT * FROM "tweets" WHERE ("flow_id" = 26) LIMIT 1
+I, [2021-09-30T16:40:11.546103 #581688]  INFO -- : (0.000194s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:40:11.546458 #581688]  INFO -- : (0.000257s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:40:11.546670 #581688]  INFO -- : (0.000165s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:40:11.547124 #581688]  INFO -- : (0.000325s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:40:11.547838 #581688]  INFO -- : (0.000610s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:40:11.551813 #581688]  INFO -- : (0.000170s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:40:11.551999 #581688]  INFO -- : (0.000142s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:40:11.552178 #581688]  INFO -- : (0.000137s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:40:11.552506 #581688]  INFO -- : (0.000231s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:40:11.553110 #581688]  INFO -- : (0.000507s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:40:11.556855 #581688]  INFO -- : (0.000162s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:40:11.557059 #581688]  INFO -- : (0.000160s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:40:11.557226 #581688]  INFO -- : (0.000120s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:40:11.557627 #581688]  INFO -- : (0.000315s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:40:11.558185 #581688]  INFO -- : (0.000464s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:40:11.562060 #581688]  INFO -- : (0.000188s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:40:11.562294 #581688]  INFO -- : (0.000186s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:40:11.562505 #581688]  INFO -- : (0.000151s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:40:11.566369 #581688]  INFO -- : (0.000188s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:40:11.566580 #581688]  INFO -- : (0.000150s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:40:11.566797 #581688]  INFO -- : (0.000170s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:40:11.567098 #581688]  INFO -- : (0.000199s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:40:11.567756 #581688]  INFO -- : (0.000511s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:40:11.568194 #581688]  INFO -- : (0.000253s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:40:11.568758 #581688]  INFO -- : (0.000474s) SELECT * FROM "tweets" WHERE ("flow_id" = 26) LIMIT 1
+I, [2021-09-30T16:41:13.270964 #583343]  INFO -- : (0.000194s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:41:13.271276 #583343]  INFO -- : (0.000239s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:41:13.271525 #583343]  INFO -- : (0.000188s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:41:13.271951 #583343]  INFO -- : (0.000284s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:41:13.272768 #583343]  INFO -- : (0.000658s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:41:13.277019 #583343]  INFO -- : (0.000185s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:41:13.277248 #583343]  INFO -- : (0.000164s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:41:13.277393 #583343]  INFO -- : (0.000089s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:41:13.277864 #583343]  INFO -- : (0.000279s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:41:13.278784 #583343]  INFO -- : (0.000801s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:41:13.283978 #583343]  INFO -- : (0.000251s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:41:13.284206 #583343]  INFO -- : (0.000161s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:41:13.284462 #583343]  INFO -- : (0.000221s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:41:13.285001 #583343]  INFO -- : (0.000333s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:41:13.285879 #583343]  INFO -- : (0.000726s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:41:13.290698 #583343]  INFO -- : (0.000196s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:41:13.290890 #583343]  INFO -- : (0.000143s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:41:13.291090 #583343]  INFO -- : (0.000165s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:41:13.295462 #583343]  INFO -- : (0.000170s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:41:13.295639 #583343]  INFO -- : (0.000139s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:41:13.295830 #583343]  INFO -- : (0.000156s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:41:13.296214 #583343]  INFO -- : (0.000261s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:41:13.296905 #583343]  INFO -- : (0.000596s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:41:13.297370 #583343]  INFO -- : (0.000302s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:41:13.298095 #583343]  INFO -- : (0.000595s) SELECT * FROM "tweets" WHERE ("flow_id" = 26) LIMIT 1
+I, [2021-09-30T16:43:43.239663 #586814]  INFO -- : (0.000197s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:43.239936 #586814]  INFO -- : (0.000168s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:43.240130 #586814]  INFO -- : (0.000162s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:43.240735 #586814]  INFO -- : (0.000450s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:43.241752 #586814]  INFO -- : (0.000798s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:43:43.246568 #586814]  INFO -- : (0.000169s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:43.246766 #586814]  INFO -- : (0.000156s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:43.246978 #586814]  INFO -- : (0.000180s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:43.247372 #586814]  INFO -- : (0.000251s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:43.248060 #586814]  INFO -- : (0.000549s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:43:43.251953 #586814]  INFO -- : (0.000162s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:43.252128 #586814]  INFO -- : (0.000143s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:43.252280 #586814]  INFO -- : (0.000127s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:43.252602 #586814]  INFO -- : (0.000246s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:43.253256 #586814]  INFO -- : (0.000585s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:43:43.257233 #586814]  INFO -- : (0.000147s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:43.257365 #586814]  INFO -- : (0.000101s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:43.257612 #586814]  INFO -- : (0.000221s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:43.261215 #586814]  INFO -- : (0.000131s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:43.261337 #586814]  INFO -- : (0.000091s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:43.261461 #586814]  INFO -- : (0.000069s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:43.261915 #586814]  INFO -- : (0.000301s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:43.262606 #586814]  INFO -- : (0.000605s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:43:43.263040 #586814]  INFO -- : (0.000279s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:43.263699 #586814]  INFO -- : (0.000559s) SELECT * FROM "tweets" WHERE ("flow_id" = 26) LIMIT 1
+I, [2021-09-30T16:43:50.325126 #586814]  INFO -- : (0.000201s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:50.325331 #586814]  INFO -- : (0.000145s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:50.325444 #586814]  INFO -- : (0.000081s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:50.326922 #586814]  INFO -- : (0.001241s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:43:50.327294 #586814]  INFO -- : (0.000243s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:50.336661 #586814]  INFO -- : (0.009096s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443564544756879364, '@Richeydarian @elybuendia9001 Pati nga daw Beatles may reunion pag tumakbo si Leni.  Sana pati Led Zeppelin.', 1443532843020275713, 2609508788, 'tl', 0, 0, 'Thu Sep 30 13:13:02 +0000 2021', false, false, false, 27, '2021-09-30 16:43:50.314568+0330') RETURNING "id"
+I, [2021-09-30T16:43:52.350877 #586814]  INFO -- : (0.000229s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:52.351125 #586814]  INFO -- : (0.000146s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:52.351342 #586814]  INFO -- : (0.000190s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:52.352480 #586814]  INFO -- : (0.000956s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:43:52.352789 #586814]  INFO -- : (0.000191s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:52.361706 #586814]  INFO -- : (0.008725s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443564515052990464, 'RT @Estradamyers: Que reconfortante y esperanzador es que los niños sigan eligiendo hacer covers de bandas clásicas.
+
+Black Dog de Led Zepp…', NULL, NULL, 'es', 704, 0, 'Thu Sep 30 13:12:55 +0000 2021', false, false, false, 27, '2021-09-30 16:43:52.338468+0330') RETURNING "id"
+I, [2021-09-30T16:43:54.378720 #586814]  INFO -- : (0.000504s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:54.379256 #586814]  INFO -- : (0.000374s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:54.379829 #586814]  INFO -- : (0.000430s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:54.384477 #586814]  INFO -- : (0.004148s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:43:54.385565 #586814]  INFO -- : (0.000710s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:54.395927 #586814]  INFO -- : (0.009723s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443564478466039808, 'RT @notasdeayeryde1: Te recomiendo que escuches este programa emitido el 29 de Setiembre en
+https://t.co/R8vlk6v5kH ( 87.6 FM Madrid ) :  E…', NULL, NULL, 'es', 1, 0, 'Thu Sep 30 13:12:46 +0000 2021', false, false, false, 27, '2021-09-30 16:43:54.363236+0330') RETURNING "id"
+I, [2021-09-30T16:43:56.410769 #586814]  INFO -- : (0.000208s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:43:56.410976 #586814]  INFO -- : (0.000149s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:43:56.411167 #586814]  INFO -- : (0.000132s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:43:56.412286 #586814]  INFO -- : (0.000994s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:43:56.412583 #586814]  INFO -- : (0.000203s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:43:56.413596 #586814]  INFO -- : (0.000866s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443564446052339727, 'RT @damien_botte: Led Zeppelin 
+Dazed And Confused (Live)
+
+https://t.co/xkkn65McY8', NULL, NULL, 'en', 20, 0, 'Thu Sep 30 13:12:38 +0000 2021', false, false, false, 27, '2021-09-30 16:43:56.399009+0330') RETURNING "id"
+I, [2021-09-30T16:44:02.837153 #587138]  INFO -- : (0.000195s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:44:02.837368 #587138]  INFO -- : (0.000142s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:44:02.837596 #587138]  INFO -- : (0.000192s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:44:02.838096 #587138]  INFO -- : (0.000363s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:44:02.838831 #587138]  INFO -- : (0.000609s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:44:02.842920 #587138]  INFO -- : (0.000163s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:44:02.843093 #587138]  INFO -- : (0.000139s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:44:02.843273 #587138]  INFO -- : (0.000148s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:44:02.843628 #587138]  INFO -- : (0.000271s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:44:02.844400 #587138]  INFO -- : (0.000676s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:44:07.562048 #587138]  INFO -- : (0.000515s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:44:07.562593 #587138]  INFO -- : (0.000393s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:44:07.563172 #587138]  INFO -- : (0.000442s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:44:07.567635 #587138]  INFO -- : (0.003956s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:44:07.568675 #587138]  INFO -- : (0.000660s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:44:07.570858 #587138]  INFO -- : (0.001467s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443564780426563590, 'Click Here to support the Klein Oak Boys Basketball Fundraiser
+https://t.co/UqmMM8OVgc', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:13:58 +0000 2021', false, false, false, 28, '2021-09-30 16:44:07.546653+0330') RETURNING "id"
+I, [2021-09-30T16:44:09.580705 #587138]  INFO -- : (0.000263s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:44:09.580952 #587138]  INFO -- : (0.000179s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:44:09.581216 #587138]  INFO -- : (0.000205s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:44:09.583272 #587138]  INFO -- : (0.001850s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:44:09.583766 #587138]  INFO -- : (0.000338s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:44:09.592971 #587138]  INFO -- : (0.008883s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443564787162562569, 'The pinnacle of vintage basketball cards 🙌
+
+#gosgc #gradedcards #NBA #vintagecards https://t.co/qmfJoq920N', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:14:00 +0000 2021', false, false, false, 28, '2021-09-30 16:44:09.573630+0330') RETURNING "id"
+I, [2021-09-30T16:44:11.604050 #587138]  INFO -- : (0.000157s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:44:11.604197 #587138]  INFO -- : (0.000079s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:44:11.604323 #587138]  INFO -- : (0.000087s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:44:11.606003 #587138]  INFO -- : (0.001514s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:44:11.606386 #587138]  INFO -- : (0.000217s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:44:11.607383 #587138]  INFO -- : (0.000799s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443564791323189259, 'RT @oki_famima: やったぁぁぁ〜(((o(*ﾟ▽ﾟ*)o)))✨
+琉球ゴールデンキングス勝利👏👏！
+おめでとうございます🎉
+
+今シーズンもしっかり応援しますよ〜😆💪🚩', NULL, NULL, 'ja', 0, 0, 'Thu Sep 30 13:14:01 +0000 2021', false, false, false, 28, '2021-09-30 16:44:11.596763+0330') RETURNING "id"
+I, [2021-09-30T16:45:31.379549 #589565]  INFO -- : (0.000136s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:45:31.379763 #589565]  INFO -- : (0.000140s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:45:31.379976 #589565]  INFO -- : (0.000149s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:45:31.380415 #589565]  INFO -- : (0.000285s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:45:31.381140 #589565]  INFO -- : (0.000579s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:45:31.385129 #589565]  INFO -- : (0.000154s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:45:31.385350 #589565]  INFO -- : (0.000159s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:45:31.385563 #589565]  INFO -- : (0.000174s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:45:31.385951 #589565]  INFO -- : (0.000281s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:45:31.386599 #589565]  INFO -- : (0.000544s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:45:31.390453 #589565]  INFO -- : (0.000167s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:45:31.390691 #589565]  INFO -- : (0.000169s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:45:31.390910 #589565]  INFO -- : (0.000171s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:45:31.391252 #589565]  INFO -- : (0.000239s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:45:31.391883 #589565]  INFO -- : (0.000515s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:45:31.395644 #589565]  INFO -- : (0.000168s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:45:31.395876 #589565]  INFO -- : (0.000171s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:45:31.396031 #589565]  INFO -- : (0.000132s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:45:31.399684 #589565]  INFO -- : (0.000169s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:45:31.399893 #589565]  INFO -- : (0.000146s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:45:31.400098 #589565]  INFO -- : (0.000183s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:45:31.400445 #589565]  INFO -- : (0.000260s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:45:31.401114 #589565]  INFO -- : (0.000553s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:45:31.401664 #589565]  INFO -- : (0.000380s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:45:31.402250 #589565]  INFO -- : (0.000492s) SELECT * FROM "tweets" WHERE ("flow_id" = 28) LIMIT 1
+I, [2021-09-30T16:45:34.686323 #589565]  INFO -- : (0.000230s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:45:34.686551 #589565]  INFO -- : (0.000142s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:45:34.686777 #589565]  INFO -- : (0.000196s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:45:34.688401 #589565]  INFO -- : (0.001374s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:45:34.688767 #589565]  INFO -- : (0.000246s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:45:34.697913 #589565]  INFO -- : (0.008912s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565137189736451, 'RT @bullyart07: Alexa play Led Zeppelin, Immigrant Song https://t.co/nbzZkwikvL', NULL, NULL, 'en', 25, 0, 'Thu Sep 30 13:15:23 +0000 2021', false, false, false, 29, '2021-09-30 16:45:34.679159+0330') RETURNING "id"
+I, [2021-09-30T16:45:36.716816 #589565]  INFO -- : (0.000526s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:45:36.717379 #589565]  INFO -- : (0.000401s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:45:36.717977 #589565]  INFO -- : (0.000424s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:45:36.722472 #589565]  INFO -- : (0.004055s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:45:36.723489 #589565]  INFO -- : (0.000667s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:45:36.734160 #589565]  INFO -- : (0.010039s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565129736536065, 'RT @Estradamyers: Que reconfortante y esperanzador es que los niños sigan eligiendo hacer covers de bandas clásicas.
+
+Black Dog de Led Zepp…', NULL, NULL, 'es', 706, 0, 'Thu Sep 30 13:15:21 +0000 2021', false, false, false, 29, '2021-09-30 16:45:36.701255+0330') RETURNING "id"
+I, [2021-09-30T16:46:18.509605 #590848]  INFO -- : (0.000192s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:18.509899 #590848]  INFO -- : (0.000218s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:18.510091 #590848]  INFO -- : (0.000161s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:18.510592 #590848]  INFO -- : (0.000324s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:18.511293 #590848]  INFO -- : (0.000585s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:18.515425 #590848]  INFO -- : (0.000192s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:18.515621 #590848]  INFO -- : (0.000149s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:18.515822 #590848]  INFO -- : (0.000171s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:18.516151 #590848]  INFO -- : (0.000226s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:18.516786 #590848]  INFO -- : (0.000537s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:23.740943 #590848]  INFO -- : (0.000529s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:23.741534 #590848]  INFO -- : (0.000432s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:23.742123 #590848]  INFO -- : (0.000447s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:23.746730 #590848]  INFO -- : (0.004110s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:46:23.747782 #590848]  INFO -- : (0.000670s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:23.751332 #590848]  INFO -- : (0.002810s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565358082834439, 'craving pizza', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:16:16 +0000 2021', false, false, false, 30, '2021-09-30 16:46:23.725754+0330') RETURNING "id"
+I, [2021-09-30T16:46:25.769704 #590848]  INFO -- : (0.000562s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:25.770238 #590848]  INFO -- : (0.000372s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:25.770790 #590848]  INFO -- : (0.000414s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:25.775274 #590848]  INFO -- : (0.004020s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:46:25.776314 #590848]  INFO -- : (0.000689s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:25.786661 #590848]  INFO -- : (0.009764s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565356870737923, '@LilahSturges She wants a pizza too https://t.co/5KaCfHKX8q', 1443551366459367427, 16733735, 'en', 0, 0, 'Thu Sep 30 13:16:15 +0000 2021', false, false, false, 30, '2021-09-30 16:46:25.754187+0330') RETURNING "id"
+I, [2021-09-30T16:46:27.803759 #590848]  INFO -- : (0.000508s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:27.804296 #590848]  INFO -- : (0.000371s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:27.804904 #590848]  INFO -- : (0.000441s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:27.809346 #590848]  INFO -- : (0.003992s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:46:27.810389 #590848]  INFO -- : (0.000664s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:27.813021 #590848]  INFO -- : (0.002077s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565366135779337, '@sekaisuperior no bc look at seonho why does he have to make that face when its just pizza?', 1443565233692282882, 2900270156, 'en', 0, 0, 'Thu Sep 30 13:16:18 +0000 2021', false, false, false, 30, '2021-09-30 16:46:27.788485+0330') RETURNING "id"
+I, [2021-09-30T16:46:32.383707 #590937]  INFO -- : (0.000183s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:32.384017 #590937]  INFO -- : (0.000228s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:32.384266 #590937]  INFO -- : (0.000218s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:32.384694 #590937]  INFO -- : (0.000287s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:32.385456 #590937]  INFO -- : (0.000587s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:32.389538 #590937]  INFO -- : (0.000182s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:32.389717 #590937]  INFO -- : (0.000145s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:32.389900 #590937]  INFO -- : (0.000152s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:32.390213 #590937]  INFO -- : (0.000231s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:32.390832 #590937]  INFO -- : (0.000537s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:32.394791 #590937]  INFO -- : (0.000155s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:32.394978 #590937]  INFO -- : (0.000157s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:32.395167 #590937]  INFO -- : (0.000141s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:32.395494 #590937]  INFO -- : (0.000228s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:32.396108 #590937]  INFO -- : (0.000541s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:32.399853 #590937]  INFO -- : (0.000156s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:32.400024 #590937]  INFO -- : (0.000141s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:32.400184 #590937]  INFO -- : (0.000137s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:32.403976 #590937]  INFO -- : (0.000143s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:32.404144 #590937]  INFO -- : (0.000134s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:32.404331 #590937]  INFO -- : (0.000158s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:32.404727 #590937]  INFO -- : (0.000302s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:32.405491 #590937]  INFO -- : (0.000657s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:32.405950 #590937]  INFO -- : (0.000283s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:32.406570 #590937]  INFO -- : (0.000535s) SELECT * FROM "tweets" WHERE ("flow_id" = 30) LIMIT 1
+I, [2021-09-30T16:46:55.846151 #593142]  INFO -- : (0.000199s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:55.846421 #593142]  INFO -- : (0.000166s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:55.846656 #593142]  INFO -- : (0.000201s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:55.847094 #593142]  INFO -- : (0.000285s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:55.847905 #593142]  INFO -- : (0.000644s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:55.851979 #593142]  INFO -- : (0.000200s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:55.852204 #593142]  INFO -- : (0.000180s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:55.852420 #593142]  INFO -- : (0.000170s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:55.852761 #593142]  INFO -- : (0.000244s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:55.853374 #593142]  INFO -- : (0.000511s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:55.857198 #593142]  INFO -- : (0.000188s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:55.857336 #593142]  INFO -- : (0.000075s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:55.857420 #593142]  INFO -- : (0.000058s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:55.857908 #593142]  INFO -- : (0.000241s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:55.858530 #593142]  INFO -- : (0.000509s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:55.862343 #593142]  INFO -- : (0.000208s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:55.862594 #593142]  INFO -- : (0.000188s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:55.862822 #593142]  INFO -- : (0.000181s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:55.866544 #593142]  INFO -- : (0.000154s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:55.866716 #593142]  INFO -- : (0.000141s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:55.866916 #593142]  INFO -- : (0.000170s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:55.867270 #593142]  INFO -- : (0.000242s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:55.867982 #593142]  INFO -- : (0.000584s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:46:55.868369 #593142]  INFO -- : (0.000247s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:55.868908 #593142]  INFO -- : (0.000468s) SELECT * FROM "tweets" WHERE ("flow_id" = 30) LIMIT 1
+I, [2021-09-30T16:46:59.494551 #593142]  INFO -- : (0.000507s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:46:59.495104 #593142]  INFO -- : (0.000394s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:46:59.495679 #593142]  INFO -- : (0.000435s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:46:59.500377 #593142]  INFO -- : (0.004094s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:46:59.501498 #593142]  INFO -- : (0.000742s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:46:59.504742 #593142]  INFO -- : (0.002567s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565510830923776, 'RT @Estradamyers: Que reconfortante y esperanzador es que los niños sigan eligiendo hacer covers de bandas clásicas.
+
+Black Dog de Led Zepp…', NULL, NULL, 'es', 708, 0, 'Thu Sep 30 13:16:52 +0000 2021', false, false, false, 31, '2021-09-30 16:46:59.479027+0330') RETURNING "id"
+I, [2021-09-30T16:47:01.523127 #593142]  INFO -- : (0.000536s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:01.523683 #593142]  INFO -- : (0.000391s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:01.524242 #593142]  INFO -- : (0.000418s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:01.528779 #593142]  INFO -- : (0.004064s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:47:01.529988 #593142]  INFO -- : (0.000765s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:01.533169 #593142]  INFO -- : (0.002587s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565459291398151, 'RT @Estradamyers: Que reconfortante y esperanzador es que los niños sigan eligiendo hacer covers de bandas clásicas.
+
+Black Dog de Led Zepp…', NULL, NULL, 'es', 708, 0, 'Thu Sep 30 13:16:40 +0000 2021', false, false, false, 31, '2021-09-30 16:47:01.507624+0330') RETURNING "id"
+I, [2021-09-30T16:47:03.544398 #593142]  INFO -- : (0.000312s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:03.544740 #593142]  INFO -- : (0.000248s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:03.545095 #593142]  INFO -- : (0.000277s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:03.547588 #593142]  INFO -- : (0.002227s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:47:03.548241 #593142]  INFO -- : (0.000412s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:03.557640 #593142]  INFO -- : (0.009050s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565436872835079, 'BP Oddo quotes Led Zeppelin''s Ronert Plant, "does anybody remember laughter?" There will be no doubt once the kids… https://t.co/DR1N4CVuOU', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:16:34 +0000 2021', true, false, false, 31, '2021-09-30 16:47:03.535771+0330') RETURNING "id"
+I, [2021-09-30T16:47:23.298532 #593485]  INFO -- : (0.000201s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:23.298797 #593485]  INFO -- : (0.000180s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:23.299061 #593485]  INFO -- : (0.000204s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:23.299500 #593485]  INFO -- : (0.000286s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:23.300215 #593485]  INFO -- : (0.000583s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:47:23.304247 #593485]  INFO -- : (0.000180s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:23.304467 #593485]  INFO -- : (0.000158s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:23.304670 #593485]  INFO -- : (0.000173s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:23.305017 #593485]  INFO -- : (0.000232s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:23.305815 #593485]  INFO -- : (0.000695s) SELECT * FROM "tweets" ORDER BY "flow_id" DESC LIMIT 1
+I, [2021-09-30T16:47:31.743040 #593485]  INFO -- : (0.000216s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:31.743376 #593485]  INFO -- : (0.000242s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:31.743635 #593485]  INFO -- : (0.000213s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:31.744844 #593485]  INFO -- : (0.001026s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:47:31.745241 #593485]  INFO -- : (0.000260s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:31.754474 #593485]  INFO -- : (0.009045s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565641944866818, 'RT @KollyGala: #Lift - 1st half - Fantastic making which deserved opening in theaters.
+
+If all goes well... Should be next to pizza 👌
+@Acto…', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:17:23 +0000 2021', false, false, false, 32, '2021-09-30 16:47:31.731093+0330') RETURNING "id"
+I, [2021-09-30T16:47:33.773684 #593485]  INFO -- : (0.000561s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:33.774241 #593485]  INFO -- : (0.000392s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:33.774810 #593485]  INFO -- : (0.000430s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:33.779258 #593485]  INFO -- : (0.004004s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:47:33.780320 #593485]  INFO -- : (0.000704s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:33.790822 #593485]  INFO -- : (0.009819s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565644482482179, 'I recently slid into the role as the 4A basketball chair for the IGCA. I will be reaching out to last year''s reps a… https://t.co/IbHLXndg0W', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:17:24 +0000 2021', true, false, false, 32, '2021-09-30 16:47:33.758232+0330') RETURNING "id"
+I, [2021-09-30T16:47:35.812048 #593485]  INFO -- : (0.000521s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:35.812637 #593485]  INFO -- : (0.000400s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:35.813191 #593485]  INFO -- : (0.000413s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:35.819138 #593485]  INFO -- : (0.005454s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:47:35.820246 #593485]  INFO -- : (0.000721s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:35.823401 #593485]  INFO -- : (0.002572s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565648341307392, 'Pizza', NULL, NULL, 'sv', 0, 0, 'Thu Sep 30 13:17:25 +0000 2021', false, false, false, 32, '2021-09-30 16:47:35.795956+0330') RETURNING "id"
+I, [2021-09-30T16:47:37.839181 #593485]  INFO -- : (0.000163s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:37.839401 #593485]  INFO -- : (0.000156s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:37.839613 #593485]  INFO -- : (0.000165s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:37.840704 #593485]  INFO -- : (0.000938s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:47:37.841017 #593485]  INFO -- : (0.000210s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:37.843004 #593485]  INFO -- : (0.001801s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565655924563969, 'RT @ella_meabon21: Thank you @NurseGMO, @LeeAduddell &amp; the rest of the @ColgateWBB staff for offering me a scholarship opportunity to furth…', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:17:27 +0000 2021', false, false, false, 32, '2021-09-30 16:47:37.827452+0330') RETURNING "id"
+I, [2021-09-30T16:47:39.861693 #593485]  INFO -- : (0.000545s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:39.862235 #593485]  INFO -- : (0.000391s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:39.862835 #593485]  INFO -- : (0.000440s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:39.867342 #593485]  INFO -- : (0.004001s) SELECT pg_attribute.attname AS pk FROM pg_class, pg_attribute, pg_index, pg_namespace WHERE pg_class.oid = pg_attribute.attrelid AND pg_class.relnamespace = pg_namespace.oid AND pg_class.oid = pg_index.indrelid AND pg_index.indkey[0] = pg_attribute.attnum AND pg_index.indisprimary = 't' AND pg_class.oid = CAST(CAST('"tweets"' AS regclass) AS oid)
+I, [2021-09-30T16:47:39.868159 #593485]  INFO -- : (0.000490s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:39.877318 #593485]  INFO -- : (0.008912s) INSERT INTO "tweets" ("tweet_id", "description", "in_reply_to_status_id", "in_reply_to_user_id", "lang", "retweet_count", "favorite_count", "tweet_created_at", "truncated", "retweeted", "favorited", "flow_id", "created_at") VALUES (1443565657086468098, 'RT @Drew_Radners77: Selling a lot of my football, baseball, and basketball! Lmk what teams or players everyeone is interested in! Can work…', NULL, NULL, 'en', 0, 0, 'Thu Sep 30 13:17:27 +0000 2021', false, false, false, 32, '2021-09-30 16:47:39.846401+0330') RETURNING "id"
+I, [2021-09-30T16:47:58.964341 #593577]  INFO -- : (0.000206s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:47:58.964541 #593577]  INFO -- : (0.000128s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:47:58.964760 #593577]  INFO -- : (0.000179s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:47:58.965265 #593577]  INFO -- : (0.000336s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:47:58.966135 #593577]  INFO -- : (0.000715s) SELECT * FROM "tweets" ORDER BY "id" DESC LIMIT 1
+I, [2021-09-30T16:48:11.090044 #593577]  INFO -- : (0.000167s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:48:11.090260 #593577]  INFO -- : (0.000167s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:48:11.090487 #593577]  INFO -- : (0.000175s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:48:11.090867 #593577]  INFO -- : (0.000275s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:48:11.091556 #593577]  INFO -- : (0.000606s) SELECT * FROM "tweets"
+I, [2021-09-30T16:48:12.202204 #593577]  INFO -- : (0.000522s) SET standard_conforming_strings = ON
+I, [2021-09-30T16:48:12.202757 #593577]  INFO -- : (0.000387s) SET client_min_messages = 'WARNING'
+I, [2021-09-30T16:48:12.203361 #593577]  INFO -- : (0.000462s) SET DateStyle = 'ISO'
+I, [2021-09-30T16:48:12.204703 #593577]  INFO -- : (0.001022s) SELECT CAST(current_setting('server_version_num') AS integer) AS v
+I, [2021-09-30T16:48:12.207671 #593577]  INFO -- : (0.002556s) SELECT * FROM "tweets"

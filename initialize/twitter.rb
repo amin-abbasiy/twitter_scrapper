@@ -1,4 +1,4 @@
-require_relative 'app'
+require_relative '../initialize/app'
 require 'twitter'
 config_data = APP::APP_FILE
 

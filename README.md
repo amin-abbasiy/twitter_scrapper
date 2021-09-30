@@ -25,6 +25,10 @@ first get to the database.yml and put there your db config
     $ bin/console 
     > Database.connect_and_create_db
 
+you can use tweet class methods in console 
+
+    > Tweet.first || Tweet.all
+
 ## Usage
 easiest way to use is run (set up database before):
 
